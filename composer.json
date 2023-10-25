@@ -1,0 +1,15 @@
+{
+    "name": "jadu/pulsar-tinymce",
+    "description": "Allow rich text editing with the TinyMCE editor.",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {
+            "Jadu\\Pulsar": "src"
+        }
+    },
+    "require": {
+        "twig/twig": "^2.0",
+        "jadu/twig-attribute-parser": "^1.0",
+        "jadu/twig-helper-options-modifier": "^1.0"
+    }
+}
