@@ -1,6 +1,7 @@
 {% macro full(options) %}
 {% spaceless %}
     {% import _self as editor %}
+    {% import '@pulsar/pulsar/v2/helpers/form.html.twig' as form %}
 
     {% set options = modify_options(options|default({})) %}
 

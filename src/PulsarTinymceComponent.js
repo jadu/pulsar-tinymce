@@ -16,7 +16,7 @@ class PulsarTinymceComponent {
         require('tinymce/models/dom');
 
         /* Import a skin (can be a custom skin instead of the default) */
-        require('tinymce/skins/ui/oxide/skin.css');
+        require('../skins/ui/pulsar/skin.css');
 
         /* Import plugins - include the relevant plugin in the 'plugins' option. */
         require('tinymce/plugins/advlist');
