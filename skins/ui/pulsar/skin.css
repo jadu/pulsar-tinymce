@@ -244,7 +244,6 @@ button::-moz-focus-inner {
   cursor: pointer;
   display: inline-block;
 
-  font-size: 14px;
   font-style: normal;
   font-weight: bold;
   letter-spacing: normal;
@@ -297,7 +296,6 @@ button::-moz-focus-inner {
   border-width: 1px;
   box-shadow: none;
   color: #000;
-  font-size: 14px;
   font-style: normal;
   font-weight: bold;
   letter-spacing: normal;
@@ -360,7 +358,6 @@ button::-moz-focus-inner {
   white-space: nowrap;
 }
 .tox .tox-button-link--sm {
-  font-size: 14px;
 }
 .tox .tox-button--naked {
   background-color: transparent;
@@ -598,7 +595,6 @@ button::-moz-focus-inner {
   display: inline-block;
   flex: 1;
   -ms-flex-preferred-size: auto;
-  font-size: 14px;
   font-style: normal;
   font-weight: normal;
   line-height: 24px;
@@ -608,7 +604,6 @@ button::-moz-focus-inner {
 .tox .tox-collection__item-accessory {
   color: ;
   display: inline-block;
-  font-size: 14px;
   height: 24px;
   line-height: 24px;
   text-transform: none;
@@ -940,7 +935,6 @@ button::-moz-focus-inner {
 }
 .tox .tox-comment__body {
   color: #000;
-  font-size: 14px;
   font-style: normal;
   font-weight: normal;
   line-height: 1.3;
@@ -958,7 +952,6 @@ button::-moz-focus-inner {
 }
 .tox .tox-comment__expander p {
   color: ;
-  font-size: 14px;
   font-style: normal;
 }
 .tox .tox-comment__body p {
@@ -1034,7 +1027,6 @@ button::-moz-focus-inner {
 .tox .tox-comment__overlaytext {
   bottom: 0;
   flex-direction: column;
-  font-size: 14px;
   left: 0;
   padding: 1em;
   position: absolute;
@@ -1169,7 +1161,7 @@ button::-moz-focus-inner {
   display: flex;
   font-size: 16px;
   justify-content: space-between;
-  padding: 8px 16px 0 16px;
+  padding: 15px;
   position: relative;
 }
 .tox .tox-dialog__header .tox-button {
@@ -1190,11 +1182,9 @@ button::-moz-focus-inner {
   margin-left: auto;
 }
 .tox .tox-dialog__title {
-
-  font-size: 20px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.3;
+  font-family: "code_pro_bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
   margin: 0;
   text-transform: none;
 }
@@ -1220,7 +1210,7 @@ button::-moz-focus-inner {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  padding: 16px 16px;
+  padding: 20px;
 }
 @media only screen and (max-width:767px) {
   body:not(.tox-force-desktop) .tox .tox-dialog__body-nav {
@@ -1234,7 +1224,6 @@ button::-moz-focus-inner {
   border-bottom: 2px solid transparent;
   color: #000;
   display: inline-block;
-  font-size: 14px;
   line-height: 1.3;
   margin-bottom: 8px;
   text-decoration: none;
@@ -1256,7 +1245,7 @@ button::-moz-focus-inner {
   max-height: 650px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 16px 16px;
+  padding: 20px;
 }
 .tox .tox-dialog__body-content > * {
   margin-bottom: 0;
@@ -1358,7 +1347,7 @@ button::-moz-focus-inner {
   border-top: 1px solid #7e7e7e;
   display: flex;
   justify-content: space-between;
-  padding: 8px 16px;
+  padding: 20px;
 }
 .tox .tox-dialog__footer-start,
 .tox .tox-dialog__footer-end {
@@ -1661,7 +1650,6 @@ body.tox-dialog__disable-scroll {
 .tox .tox-toolbar-label {
   color: ;
   display: block;
-  font-size: 14px;
   font-style: normal;
   font-weight: normal;
   line-height: 1.3;
@@ -1683,7 +1671,7 @@ body.tox-dialog__disable-scroll {
 }
 .tox .tox-form__group {
   box-sizing: border-box;
-  margin-bottom: 4px;
+  margin-bottom: 24px;
 }
 .tox .tox-form-group--maximize {
   flex: 1;
@@ -1762,13 +1750,12 @@ body.tox-dialog__disable-scroll {
   box-shadow: none;
   box-sizing: border-box;
   color: #000;
-
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  min-height: 34px;
+  min-height: 48px;
   outline: none;
-  padding: 5px 4px;
+  padding: 0 0 0 12px;
   resize: none;
   width: 100%;
 }
@@ -1781,10 +1768,11 @@ body.tox-dialog__disable-scroll {
 .tox .tox-textfield:focus,
 .tox .tox-listboxfield .tox-listbox--select:focus,
 .tox .tox-textarea:focus {
-  background-color: #fafafa;
-  border-color: #3e4994;
-  box-shadow: none;
-  outline: none;
+  border-color: #1e1e1e;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 2px #1e1e1e;
+  outline: 3px solid #fd0;
+  outline-offset: 0;
 }
 .tox .tox-toolbar-textfield {
   border-width: 0;
@@ -2059,7 +2047,6 @@ body.tox-dialog__disable-scroll {
 .tox .tox-insert-table-picker__label {
   color: ;
   display: block;
-  font-size: 14px;
   padding: 4px;
   text-align: center;
   width: 100%;
@@ -2132,7 +2119,6 @@ body.tox-dialog__disable-scroll {
   color: #000;
   display: flex;
   flex: 0 0 auto;
-  font-size: 14px;
   font-style: normal;
   font-weight: normal;
   height: 34px;
@@ -2192,7 +2178,6 @@ body.tox-dialog__disable-scroll {
   box-sizing: border-box;
   display: -ms-grid;
   display: grid;
-  font-size: 14px;
   font-weight: normal;
   -ms-grid-columns: minmax(40px, 1fr) auto minmax(40px, 1fr);
   grid-template-columns: minmax(40px, 1fr) auto minmax(40px, 1fr);
@@ -2202,7 +2187,6 @@ body.tox-dialog__disable-scroll {
   transition: transform 100ms ease-in, opacity 150ms ease-in;
 }
 .tox .tox-notification p {
-  font-size: 14px;
   font-weight: normal;
 }
 .tox .tox-notification a {
@@ -2276,7 +2260,6 @@ body.tox-dialog__disable-scroll {
   -ms-grid-row-align: center;
       align-self: center;
   color: #000;
-  font-size: 14px;
   -ms-grid-column-span: 1;
   grid-column-end: 3;
   -ms-grid-column: 2;
@@ -2582,7 +2565,7 @@ body.tox-dialog__disable-scroll {
   flex: 0 0 auto;
   font-size: 12px;
   font-weight: normal;
-  height: 18px;
+  height: 2.5em;
   overflow: hidden;
   padding: 0 8px;
   position: relative;
@@ -2680,7 +2663,6 @@ body.tox-dialog__disable-scroll {
   color: #000;
   display: flex;
   flex: 0 0 auto;
-  font-size: 14px;
   font-style: normal;
   font-weight: normal;
   height: 34px;
@@ -2942,7 +2924,6 @@ body.tox-dialog__disable-scroll {
   border-radius: 0px;
   box-shadow: 0 2px 4px rgba(34, 47, 62, 0.3);
   color: rgba(255, 255, 255, 0.75);
-  font-size: 14px;
   font-style: normal;
   font-weight: normal;
   padding: 4px 8px;
