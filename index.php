@@ -11,6 +11,7 @@ use Jadu\Pulsar\Twig\Extension\HelperOptionsModifierExtension;
 
 $loader = new Twig_Loader_Filesystem($templateDir);
 $loader->addPath($baseDir . '/', 'src');
+$loader->addPath($baseDir . '/vendor/jadu/pulsar/views/', 'pulsar');
 
 $twig = new Twig_Environment($loader,
     array(

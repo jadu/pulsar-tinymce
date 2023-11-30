@@ -11,5 +11,8 @@
         "twig/twig": "^2.0",
         "jadu/twig-attribute-parser": "^1.0",
         "jadu/twig-helper-options-modifier": "^1.0"
+    },
+    "require-dev": {
+        "jadu/pulsar": "^14.0"
     }
 }
