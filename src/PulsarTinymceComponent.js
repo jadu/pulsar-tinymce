@@ -26,6 +26,9 @@ class PulsarTinymceComponent {
         require('tinymce/plugins/link');
         require('tinymce/plugins/lists');
         require('tinymce/plugins/table');
+        require('tinymce/plugins/directionality');
+        require('tinymce/plugins/wordcount');
+        require('tinymce/plugins/insertdatetime');
 
         /* content UI CSS is required */
         this.contentUiSkinCss = fs.readFileSync('node_modules/tinymce/skins/ui/oxide/content.css', { encoding: 'UTF-8' });
@@ -43,8 +46,12 @@ class PulsarTinymceComponent {
         tinymce.init({
             selector: 'textarea.js-tinymce',
             /* All plugins need to be imported and added to the plugins option. */
-            plugins: 'advlist code emoticons link lists table',
-            toolbar: 'bold italic | bullist numlist | link emoticons',
+            plugins: 'advlist code emoticons link lists table directionality wordcount insertdatetime',
+            toolbar: 'bold italic | bullist numlist | link emoticons | directionality ltr rtl | wordcount | insertdatetime',
+            advlist_bullet_styles: 'square,circle,disc',
+            advlist_number_styles: 'lower-alpha,lower-greek,lower-roman,upper-alpha,upper-roman',
+            directionality_default: 'ltr rtl',
+            insertdatetime_dateformat: '%d-%m-%Y',
             skin: false,
             content_css: false,
             content_style: this.contentUiSkinCss.toString() + '\n' + this.contentCss.toString(),
