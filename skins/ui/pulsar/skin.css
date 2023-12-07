@@ -1681,6 +1681,7 @@ body.tox-dialog__disable-scroll {
 }
 .tox .tox-form__group--stretched .tox-textarea {
   flex: 1;
+  height: 100%;
   -ms-flex-preferred-size: auto;
 }
 .tox .tox-form__group--stretched .tox-navobj {
@@ -2989,7 +2990,9 @@ body.tox-dialog__disable-scroll {
 .tox .tox-image-tools__sidebar {
   height: 60px;
 }
-
 .tox-promotion {
   display: none;
+}
+.tox-textarea-wrap {
+  min-height: 100%
 }
