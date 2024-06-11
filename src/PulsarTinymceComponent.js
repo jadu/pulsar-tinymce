@@ -21,6 +21,7 @@ class PulsarTinymceComponent {
         /* Import plugins - include the relevant plugin in the 'plugins' option. */
         require('tinymce/plugins/advlist');
         require('tinymce/plugins/code');
+        require('tinymce/plugins/codesample');
         require('tinymce/plugins/emoticons');
         require('tinymce/plugins/emoticons/js/emojis');
         require('tinymce/plugins/link');
@@ -29,6 +30,9 @@ class PulsarTinymceComponent {
         require('tinymce/plugins/directionality');
         require('tinymce/plugins/wordcount');
         require('tinymce/plugins/insertdatetime');
+        require('tinymce/plugins/anchor');
+        require('tinymce/plugins/searchreplace');
+        require('tinymce/plugins/charmap');
 
         /* content UI CSS is required */
         this.contentUiSkinCss = fs.readFileSync('node_modules/tinymce/skins/ui/oxide/content.css', { encoding: 'UTF-8' });
@@ -46,12 +50,14 @@ class PulsarTinymceComponent {
         tinymce.init({
             selector: 'textarea.js-tinymce',
             /* All plugins need to be imported and added to the plugins option. */
-            plugins: 'advlist code emoticons link lists table directionality wordcount insertdatetime',
-            toolbar: 'bold italic | bullist numlist | link emoticons | directionality ltr rtl | wordcount | insertdatetime',
+            plugins: 'advlist code codesample emoticons link lists table directionality wordcount insertdatetime anchor searchreplace charmap',
+            removed_menuitems: 'print',
+            toolbar: 'bold italic | bullist numlist | link emoticons | directionality ltr rtl | wordcount | insertdatetime | anchor | indent outdent',
             advlist_bullet_styles: 'square,circle,disc',
             advlist_number_styles: 'lower-alpha,lower-greek,lower-roman,upper-alpha,upper-roman',
             directionality_default: 'ltr rtl',
             insertdatetime_dateformat: '%d-%m-%Y',
+            promotion: false,
             skin: false,
             content_css: false,
             content_style: this.contentUiSkinCss.toString() + '\n' + this.contentCss.toString(),
