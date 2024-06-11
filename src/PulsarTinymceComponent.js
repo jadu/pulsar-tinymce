@@ -52,7 +52,7 @@ class PulsarTinymceComponent {
             /* All plugins need to be imported and added to the plugins option. */
             plugins: 'advlist code codesample emoticons link lists table directionality wordcount insertdatetime anchor searchreplace charmap',
             removed_menuitems: 'print',
-            toolbar: 'bold italic | bullist numlist | link emoticons | directionality ltr rtl | wordcount | insertdatetime | anchor',
+            toolbar: 'bold italic | bullist numlist | link emoticons | directionality ltr rtl | wordcount | insertdatetime | anchor | indent outdent',
             advlist_bullet_styles: 'square,circle,disc',
             advlist_number_styles: 'lower-alpha,lower-greek,lower-roman,upper-alpha,upper-roman',
             directionality_default: 'ltr rtl',
